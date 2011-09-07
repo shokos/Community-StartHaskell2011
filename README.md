@@ -1,8 +1,8 @@
 スタートHaskell
 ===============
 
-スタートHaskellは、入門者から初心者の方を対象に、実際にコーディングをしながら
-１からHaskellを学んでいく勉強会です。月1回ペースで全5回を予定しています。
+スタートHaskellは、入門者から初心者の方を対象に、実際にコーディングをしながら\
+1からHaskellを学んでいく勉強会です。月1回ペースで全5回を予定しています。
 
 * [Googleグループ](https://groups.google.com/group/start-haskell?hl=ja)
 * [Twitter](http://twitter.com/#!/start_haskell)
