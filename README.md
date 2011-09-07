@@ -1,17 +1,38 @@
 スタートHaskell
 ===============
 
-スタートHaskellは、入門者から初心者の方を対象に、実際にコーディングをしながら
-1からHaskellを学んでいく勉強会です。月1回ペースで全5回を予定しています。
+スタートHaskellは、入門者から初心者の方を対象に、実際にコーディングをしながら1からHaskellを学んでいく勉強会です。月1回ペースで全5回を予定しています。
 
 * [Googleグループ](https://groups.google.com/group/start-haskell?hl=ja)
 * [Twitter](http://twitter.com/#!/start_haskell)
 * [UStream](http://www.ustream.tv/channel/start-haskell)
 * [Flickr](http://www.flickr.com/groups/start_haskell/)
 
-イベント
---------
+2011-07-24 第0回
+----------------
 
-* 2011-07-24 [第0回](http://atnd.org/events/17468)
-* 2011-08-24 [第1回](http://atnd.org/events/18538)
-* 2011-09-11 [第2回](http://atnd.org/events/19581)
+* [ATND](http://atnd.org/events/17468)
+
+2011-08-24 第1回
+----------------
+
+* [ATND](http://atnd.org/events/18538)
+* 読書：[プログラミングHaskell](http://www.amazon.co.jp/gp/product/4274067815/)の第1・2・3・4章
+* 補足：
+    * [第1章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter01-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter01-en.md)）
+    * [第4章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter04-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter04-en.md)）
+* 演習問題：
+    * [第1章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter01/Chapter01-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter01/Chapter01-en.md)）
+    * [第2章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter02/Chapter02-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter02/Chapter02-en.md)）
+    * [第3章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter03/Chapter03-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter03/Chapter03-en.md)）
+    * [第4章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter04/Chapter04-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter04/Chapter04-en.md)）
+* 宿題：[宿題1](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/homework/homework01/Homework01-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/homework/homework01/Homework01-en.md)）、[問題5の図](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/homework/homework01/Exercise05.png)
+
+2011-09-11 第2回
+----------------
+
+* [ATND](http://atnd.org/events/19581)
+* 読書：[プログラミングHaskell](http://www.amazon.co.jp/gp/product/4274067815/)の第5・6・7章
+* 補足：
+    * [第5章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter05-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter05-en.md)）
+    * [第6章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter06-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter06-en.md)）
