@@ -16,7 +16,7 @@ collatz n | n > 0     = collatz' [] n
 
 collatzMax :: Int -> Int
 collatzMax max | max > 0   = fst (foldl1' c [(n, clen 0 n) | n <- [1..max]])
-            | otherwise = error "max not strictly positive"
+               | otherwise = error "max not strictly positive"
   where
     c p1@(_,c1) p2@(_,c2) | c1 > c2   = p1
                           | otherwise = p2
