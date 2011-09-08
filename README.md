@@ -8,6 +8,8 @@
 * [UStream](http://www.ustream.tv/channel/start-haskell)
 * [Flickr](http://www.flickr.com/groups/start_haskell/)
 
+参加者は自主管理制度をしています。現在までに出したファイルが下にリンクしています。まだ出していないファイルを見ないでください。
+
 2011-07-24 第0回
 ----------------
 
