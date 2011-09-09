@@ -95,25 +95,7 @@ C-Reverse-01-Book
 
 > 理由を理解するためにリストについて考えます。
 
-C-Reverse-02-Arrays
--------------------
-
-C言語の配列：
-
-    char *s = "hoge";
-
-     s
-     ↓
-    [h][o][g][e][ヌル]
-
-    s[n] → s + n * sizeof(char)
-
-> 連続したアドレス空間を占めます。
-> 要素を取るのが早い。
-> 永続データ構造として使わない。
-> リストは配列ではないです。
-
-C-Reverse-03-Lists-Structure
+C-Reverse-02-Lists-Structure
 ----------------------------
 
 Haskellのリストは連結リストです。
@@ -127,7 +109,7 @@ Haskellのリストは連結リストです。
 
 > 永続データ構造です。
 
-C-Reverse-04-Lists-Cons
+C-Reverse-03-Lists-Cons
 -----------------------
 
     s1 = 't' : s0
@@ -140,7 +122,7 @@ C-Reverse-04-Lists-Cons
 > 「cons」（`(:)`）が早いです。
 > リストをコピーする必要ないです。
 
-C-Reverse-05-Lists-Tail
+C-Reverse-04-Lists-Tail
 -----------------------
 
     s2 = tail s0
@@ -153,7 +135,7 @@ C-Reverse-05-Lists-Tail
 > `tail`も早いです。
 > リストをコピーする必要ないです。
 
-C-Reverse-06-Lists-Append-1
+C-Reverse-05-Lists-Append-1
 ---------------------------
 
     s3 = s0 ++ ['s']
@@ -168,7 +150,7 @@ C-Reverse-06-Lists-Append-1
 後ろに入れたら、`s0`と`s1`と`s2`の値が変更させてしまいます。それで、これ
 できません。
 
-C-Reverse-07-Lists-Append-2
+C-Reverse-06-Lists-Append-2
 ---------------------------
 
     s3 = s0 ++ ['s']
@@ -187,7 +169,7 @@ C-Reverse-07-Lists-Append-2
 
 > `(++)`を使う時、注意が必要です。
 
-C-Reverse-08-Slow
+C-Reverse-07-Slow
 -----------------
 
     reverse :: [a] -> [a]
@@ -196,7 +178,7 @@ C-Reverse-08-Slow
 
 各ステップにリストをコピーしてしまいます。
 
-C-Reverse-09-Fix
+C-Reverse-08-Fix
 ----------------
 
 こういう方法で解決できます。
@@ -213,7 +195,7 @@ C-Reverse-09-Fix
 
 > `(:)`だけ使いますので早いです。
 
-C-Reverse-10-Final
+C-Reverse-09-Final
 ------------------
 
 最終版：
@@ -228,7 +210,7 @@ C-Reverse-10-Final
 > カリー化のおかげで`lst`が必要ないです。
 > ワイルドカード「_」で置き換えました。
 
-C-Reverse-11-TailRecursion
+C-Reverse-10-TailRecursion
 --------------------------
 
 末尾再帰？
