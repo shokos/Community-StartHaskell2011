@@ -70,3 +70,39 @@ isValidTP p1 p2 p3 p4 p5 p6
     -- face 6521 vertices are in correct order
     cw6521 = (isClockwise p6 p5 p2 p4) && (isClockwise p5 p2 p1 p3)
           && (isClockwise p2 p1 p6 p3) && (isClockwise p1 p6 p5 p4)
+
+---------------
+-- Test Data --
+---------------
+
+rotateZ :: Float -> (Float, Float, Float) -> (Float, Float, Float)
+rotateZ theta (x,y,z) = let s = sin theta
+                            c = cos theta
+                        in  (c * x - s * y, s * x + c * y, z)
+
+rotateX :: Float -> (Float, Float, Float) -> (Float, Float, Float)
+rotateX theta (x,y,z) = let s = sin theta
+                            c = cos theta
+                        in  (x, c * y - s * z, s * y + c * z)
+
+rotateY :: Float -> (Float, Float, Float) -> (Float, Float, Float)
+rotateY theta (x,y,z) = let s = sin theta
+                            c = cos theta
+                        in  (c * x + s * z, y, c * z - s * x)
+
+tp1  = [(2,0,0),(2,2,0),(0,2,2),(0,0,2),(-2,2,0),(-2,0,0)]
+tp1' = let theta = pi / 4
+       in map (rotateY theta . rotateX theta . rotateZ theta) tp1
+tp2  = [(2,0,0),(2,-2,0),(0,-2,-2),(0,0,-2),(-2,-2,0),(-2,0,0)]
+tp3  = [(2,0,0),(2,2,0),(0,2,2),(0,0,2),(-2,0,0),(-2,2,0)]
+tp4  = [(2,0,0),(2,-2,0),(0,-2,-2),(0,0,-2),(-2,0,0),(-2,-2,0)]
+tp5  = [(0,0,1),(0,1,1),(1,1,0),(1,0,0),(-1,1,0),(-1,0,0)]
+
+isValidTP' x = isValidTP (x !! 0) (x !! 1) (x !! 2) (x !! 3) (x !! 4) (x !! 5)
+
+test = isValidTP' tp1
+    && isValidTP' tp1'
+    && isValidTP' tp2
+    && not (isValidTP' tp3)
+    && not (isValidTP' tp4)
+    && not (isValidTP' tp5)
