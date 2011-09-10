@@ -116,5 +116,3 @@ Check your implementation against the following test cases:
     -1.2599210498953948
     > nroot 0.0001 (-2) 2
     *** Exception: even root of negative
-
-(Your return values may vary from these, outside of the given precision.)

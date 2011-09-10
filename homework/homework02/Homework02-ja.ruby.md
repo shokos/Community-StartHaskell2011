@@ -138,6 +138,3 @@ http://ja.wikipedia.org/wiki/ニュートン法
     -1.2599210498953948
     > nroot 0.0001 (-2) 2
     *** Exception: even root of negative
-
-（｛精度｝｛せいど｝を｛保障｝｛ほしょう｝できない
-｛可能性｝｛かのうせい｝がある。）
