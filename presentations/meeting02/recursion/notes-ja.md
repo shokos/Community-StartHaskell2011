@@ -72,8 +72,8 @@ B-Factorial-05-Partial-Error
 B-Factorial-06-Reorder
 ----------------------
 
-定義の条件の順番はパフォーマンスに影響を与えます。頻繁に実行される条件を上にした
-方が良いです。
+定義の条件の順番はパフォーマンスに影響を与えます。頻繁に実行される条件を上に
+した方が良いです。
 
     factorial :: Int -> Int
     factorial n | n > 0     = n * factorial (n - 1)
