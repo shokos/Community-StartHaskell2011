@@ -112,6 +112,9 @@ Haskellのリストは連結リストです。
 C-Reverse-03-Lists-Cons
 -----------------------
 
+Haskellのリストは連結リストです。
+
+    s0 = "hat"
     s1 = 't' : s0
 
      s1  s0
@@ -125,6 +128,10 @@ C-Reverse-03-Lists-Cons
 C-Reverse-04-Lists-Tail
 -----------------------
 
+Haskellのリストは連結リストです。
+
+    s0 = "hat"
+    s1 = 't' : s0
     s2 = tail s0
 
      s1  s0  s2
@@ -172,11 +179,11 @@ C-Reverse-06-Lists-Append-2
 C-Reverse-07-Slow
 -----------------
 
+各ステップにリストをコピーしてしまいます。
+
     reverse :: [a] -> [a]
     reverse []     = []
     reverse (x:xs) = reverse xs ++ [x]
-
-各ステップにリストをコピーしてしまいます。
 
 C-Reverse-08-Fix
 ----------------
@@ -190,8 +197,8 @@ C-Reverse-08-Fix
         reverse' acc (x:xs) = reverse' (x : acc) xs
         reverse' acc []     = acc
 
-* `reverse'`は「ヘルパー関数」と言います。
-* `acc` ← accumulator ← アキュミュレイター
+* `reverse'` ← 「ヘルパー関数」
+* `acc` ← アキュミュレイター
 
 > `(:)`だけ使いますので早いです。
 
@@ -230,4 +237,6 @@ C-Reverse-10-TailRecursion
 D-Closing-01-Practice
 ---------------------
 
-演習問題で練習しましょう！何か分からなかったら、質問してください。
+演習問題で練習しましょう！
+
+何か分からなかったら、質問してください。
