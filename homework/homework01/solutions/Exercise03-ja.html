@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<title>宿題1問題3</title>
+		<meta name="description" content="スタートHaskell 2011" />
+		<meta name="author" content="travis@cardwell@yuzutechnology.com" />
+		<style>
+			html, body, div, table, tr, th, td, h1, h2, em { border: 0; font: inherit; font-size: 100%; font-weight: normal; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+			body { background: #fff; color: #000; font-family: "MS ゴシック", "ヒラギノ角ゴ Pro W3", "Palatino Linotype", Palatino, "Book Antigua", Georgia, serif; font-size: 13px/1.231%; }
+			h1 { background: #000; color: #fff; font-size: 400%; padding: 0.5em; text-align: center; }
+			h2 { font-size: 300%; margin-left: -1em; }
+			em { font-style: italic; }
+			div { margin: 3em 2em 1em 4em; }
+			table { font-size: 200%; margin: 1em 0; }
+			th, td { padding: 0 0.5em; }
+			th { background: #000; color: #fff; text-align: left; }
+			table.params { width: 100%; }
+			table.params th { width: 33%; }
+			table.params td { width: 33%; }
+		</style>
+	</head>
+	<body>
+		<h1>宿題1問題3</h1>
+		<div>
+			<h2>引数</h2>
+			<table class="params">
+				<tr>
+					<th>(幅,高さ)</th>
+					<td>(720,480)</td>
+					<td>(ピクセル,ピクセル)</td>
+				</tr>
+				<tr>
+					<th>フレームレート</th>
+					<td>(30000 / 1001)</td>
+					<td>フレーム／秒</td>
+				</tr>
+				<tr>
+					<th>時間</th>
+					<td>(120 * 60)</td>
+					<td>秒</td>
+				</tr>
+				<tr>
+					<th>オーディオ・<br />ビットレート</th>
+					<td>128</td>
+					<td>Kb／秒</td>
+				</tr>
+				<tr>
+					<th>ファイルサイズ</th>
+					<td>700</td>
+					<td>MiB</td>
+				</tr>
+			</table>
+			<table class="params">
+				<tr>
+					<th>色震度</th>
+					<td>24</td>
+					<td>ビット／ピクセル</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2>1. 非圧縮：Kb／フレーム</h2>
+			<table class="calc">
+				<tr>
+					<th>幅 * 高さ</th>
+					<th>色震度</th>
+					<th>b→Kb</th>
+					<th><em>X</em></th>
+				</tr>
+				<tr>
+					<td>720 * 480</td>
+					<td>* 24</td>
+					<td>/ 1000</td>
+					<td>= 8294.4</td>
+				</tr>
+				<tr>
+					<td>ピクセル／フレーム</td>
+					<td>ビット／ピクセル</td>
+					<td>換算率</td>
+					<td>Kb／フレーム</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2>2. 非圧縮ビデオのビットレート</h2>
+			<table class="calc">
+				<tr>
+					<th><em>X</em></th>
+					<th>フレームレート</th>
+					<th>非圧縮ビデオの<br />ビットレート</th>
+				</tr>
+				<tr>
+					<td>8294.4</td>
+					<td>* (30000 / 1001)</td>
+					<td>= 248583.4</td>
+				</tr>
+				<tr>
+					<td>Kb／フレーム</td>
+					<td>フレーム／秒</td>
+					<td>Kb／秒</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2>3. ファイルサイズ</h2>
+			<table class="calc">
+				<tr>
+					<th>ファイルサイズ</th>
+					<th>MiB→KB</th>
+					<th>B→b</th>
+					<th><em>Y</em></th>
+				</tr>
+				<tr>
+					<td>700</td>
+					<td>* 1024 * 1024 / 1000</td>
+					<td>* 8</td>
+					<td>= 5872025.6</td>
+				</tr>
+				<tr>
+					<td>MiB</td>
+					<td>換算率</td>
+					<td>換算率</td>
+					<td>Kb</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2>4. オーディオ＋ビデオ・ビットレート</h2>
+			<table class="calc">
+				<tr>
+					<th><em>Y</em></th>
+					<th>時間</th>
+					<th><em>Z</em></th>
+				</tr>
+				<tr>
+					<td>5872025.6</td>
+					<td>/ (120 * 60)</td>
+					<td>= 815.6</td>
+				</tr>
+				<tr>
+					<td>Kb</td>
+					<td>秒</td>
+					<td>Kb／秒</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2>5. 圧縮されたビデオのビットレート</h2>
+			<table class="calc">
+				<tr>
+					<th><em>Z</em></th>
+					<th>オーディオ・<br />ビットレート</th>
+					<th>圧縮されたビデオの<br />ビットレート</th>
+				</tr>
+				<tr>
+					<td>815.6</td>
+					<td>- 128</td>
+					<td>= 687.6</td>
+				</tr>
+				<tr>
+					<td>Kb／秒</td>
+					<td>Kb／秒</td>
+					<td>Kb／秒</td>
+				</tr>
+			</table>
+		</div>
+		<div>
+			<h2>6. 画像圧縮率</h2>
+			<table class="calc">
+				<tr>
+					<th>非圧縮ビデオの<br />ビットレート</th>
+					<th>圧縮されたビデオの<br />ビットレート</th>
+					<th>画像圧縮率</th>
+				</tr>
+				<tr>
+					<td>248583.4</td>
+					<td>/ 687.6</td>
+					<td>= 361.5</td>
+				</tr>
+				<tr>
+					<td>Kb／秒</td>
+					<td>Kb／秒</td>
+					<td>率</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
