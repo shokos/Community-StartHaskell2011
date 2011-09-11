@@ -38,3 +38,7 @@
 * 補足：
     * [第5章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter05-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter05-en.md)）
     * [第6章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter06-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter06-en.md)）
+* 演習問題：
+    * [第5章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter05/Chapter05-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter05/Chapter05-en.md)）
+    * [第6章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter06/Chapter06-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter06/Chapter06-en.md)）
+    * [第7章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter07/Chapter07-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter07/Chapter07-en.md)）
