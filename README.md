@@ -42,4 +42,12 @@
     * [第5章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter05/Chapter05-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter05/Chapter05-en.md)）、[答え](https://github.com/yuzutechnology/Community-StartHaskell2011/tree/master/exercises/chapter05/solutions)
     * [第6章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter06/Chapter06-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter06/Chapter06-en.md)）、[答え](https://github.com/yuzutechnology/Community-StartHaskell2011/tree/master/exercises/chapter06/solutions)
     * [第7章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter07/Chapter07-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/chapter07/Chapter07-en.md)）、[答え](https://github.com/yuzutechnology/Community-StartHaskell2011/tree/master/exercises/chapter07/solutions)
+
+2011-10-02 第3回
+----------------
+
+* [ATND](http://atnd.org/events/20095)
+* 読書：なし
+* 練習問題：
+    * [再帰の練習問題](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/recursion/recursion-ja.lhs)[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/recursion/recursion-en.lhs)
 * 宿題：[宿題2](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/homework/homework02/Homework02-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/homework/homework02/Homework02-en.md)）
