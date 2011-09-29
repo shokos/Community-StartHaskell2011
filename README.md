@@ -49,5 +49,5 @@
 * [ATND](http://atnd.org/events/20095)
 * 読書：なし
 * 練習問題：
-    * [再帰の練習問題](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/recursion/recursion-ja.lhs)[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/recursion/recursion-en.lhs)
+    * [再帰の練習問題](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/recursion/recursion-ja.lhs)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/recursion/recursion-en.lhs)）
 * 宿題：[宿題2](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/homework/homework02/Homework02-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/homework/homework02/Homework02-en.md)）
