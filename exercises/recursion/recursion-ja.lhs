@@ -678,7 +678,7 @@ HUnitのパッケージを使って、テストも付いている。`cabal insta
 >   [ assertEqual "sum [1,2,3,4]" (sum [1,2,3,4]) 10
 >   , assertEqual "sum [1,-1,2,-2]" (sum [1,-1,2,-2]) 0
 >   , assertEqual "sum []" (sum []) 0
->   -- 無限／大きなテスト - requires tail recursion
+>   -- 無限／大きなテスト - 末尾再帰が必要です
 >   --, assertEqual "sum (concatMap (\\n -> [n,-n]) [1..large])"
 >   --              (sum (Prelude.concatMap (\n -> [n,-n]) [1..large]))
 >   --              0
@@ -698,7 +698,7 @@ HUnitのパッケージを使って、テストも付いている。`cabal insta
 >   , assertEqual "product [1,-1,2,-2]" (product [1,-1,2,-2]) 4
 >   , assertEqual "product [0,1,2]" (product [0,1,2]) 0
 >   , assertEqual "product []" (product []) 1
->   -- 無限／大きなテスト - requires tail recursion
+>   -- 無限／大きなテスト - 末尾再帰が必要です
 >   --, assertEqual
 >   --    "product (concatMap (\\n -> let n2 = 2*n in [n2,1/n2]) [1..large])"
 >   --    (product (concatMap (\n -> let n2 = 2*n in [n2,1/n2]) [1..large]))
@@ -749,7 +749,7 @@ HUnitのパッケージを使って、テストも付いている。`cabal insta
 >   -- 基本のテスト
 >   [ assertEqual "length [1,2,3]" (length [1,2,3]) 3
 >   , assertEqual "length []" (length []) 0
->   -- 無限／大きなテスト - requires tail recursion
+>   -- 無限／大きなテスト - 末尾再帰が必要です
 >   --, assertEqual "length [1..large]" (length [1..large]) large
 >   ]
 

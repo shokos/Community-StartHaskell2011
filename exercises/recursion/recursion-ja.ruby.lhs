@@ -697,7 +697,7 @@ HUnitのパッケージを｛使｝｛つか｝って、テストも｛付｝｛
 >   [ assertEqual "sum [1,2,3,4]" (sum [1,2,3,4]) 10
 >   , assertEqual "sum [1,-1,2,-2]" (sum [1,-1,2,-2]) 0
 >   , assertEqual "sum []" (sum []) 0
->   -- ｛無限｝｛むげん｝／｛大｝｛おお｝きなテスト - requires tail recursion
+>   -- ｛無限｝｛むげん｝／｛大｝｛おお｝きなテスト - ｛末尾再帰｝｛まつびさいき｝が｛必要｝｛ひつよう｝です
 >   --, assertEqual "sum (concatMap (\\n -> [n,-n]) [1..large])"
 >   --              (sum (Prelude.concatMap (\n -> [n,-n]) [1..large]))
 >   --              0
@@ -717,7 +717,7 @@ HUnitのパッケージを｛使｝｛つか｝って、テストも｛付｝｛
 >   , assertEqual "product [1,-1,2,-2]" (product [1,-1,2,-2]) 4
 >   , assertEqual "product [0,1,2]" (product [0,1,2]) 0
 >   , assertEqual "product []" (product []) 1
->   -- ｛無限｝｛むげん｝／｛大｝｛おお｝きなテスト - requires tail recursion
+>   -- ｛無限｝｛むげん｝／｛大｝｛おお｝きなテスト - ｛末尾再帰｝｛まつびさいき｝が｛必要｝｛ひつよう｝です
 >   --, assertEqual
 >   --    "product (concatMap (\\n -> let n2 = 2*n in [n2,1/n2]) [1..large])"
 >   --    (product (concatMap (\n -> let n2 = 2*n in [n2,1/n2]) [1..large]))
@@ -768,7 +768,7 @@ HUnitのパッケージを｛使｝｛つか｝って、テストも｛付｝｛
 >   -- ｛基本｝｛きほん｝のテスト
 >   [ assertEqual "length [1,2,3]" (length [1,2,3]) 3
 >   , assertEqual "length []" (length []) 0
->   -- ｛無限｝｛むげん｝／｛大｝｛おお｝きなテスト - requires tail recursion
+>   -- ｛無限｝｛むげん｝／｛大｝｛おお｝きなテスト - ｛末尾再帰｝｛まつびさいき｝が｛必要｝｛ひつよう｝です
 >   --, assertEqual "length [1..large]" (length [1..large]) large
 >   ]
 
