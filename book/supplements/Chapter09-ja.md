@@ -4,12 +4,12 @@
 getCh
 -----
 
-GHCの標準ライブラリーに`getCh`が含まれていません。次のファイルに定義
+GHCの標準ライブラリーには`getCh`が含まれていません。次のファイルに定義
 されています。
 
 http://www.cs.nott.ac.uk/~gmh/calculator.lhs
 
-もし自分で入力した場合、次の定義です。
+もし自分で記述する場合(学習のためにもお勧めします)、次の定義です。
 
     -- base
     import System.IO (hSetEcho, stdin)
@@ -20,21 +20,21 @@ http://www.cs.nott.ac.uk/~gmh/calculator.lhs
                hSetEcho stdin True
                return c
 
-9.5からのコードを入力して実行できます。`getLine`と`putStr`と`putStrLn`は
-`Prelude`に定義されているので`Prelude`の定義を隠す必要です：
+9.5節以降のコードを入力して実行できます。`getLine`と`putStr`、`putStrLn`は
+`Prelude`に定義されているので、`Prelude`の定義を隠す必要があります：
 
     import Prelude hiding (getLine, putStr, putStrLn)
 
 wait
 ----
 
-プログラムで時間を待たせる方法は、ビジーウェイトが悪い方法です。この章で書いて
-ある`wait 500`は近代的なパソコンでは効果があんまりないです。代わりに、
-`Control.Concurrent`で定義されている関数`threadDelay`を使ってください。
-`threadDelay 200000`は十分時間を待たせられます。
+プログラムで時間を待たせるのに、ビジーウェイトは悪い方法です。この章で書いて
+ある`wait 500`は最近のパソコンではほとんど効果がありません。代わりに
+`Control.Concurrent`で定義されている`threadDelay`関数を使ってください。
+`threadDelay 200000`とすれば十分時間を待たせられます。
 
 練習問題1
 ---------
 
-`\ESC[1D`の制御文字列はすべてなターミナルで動かしません。でも動かさなくても
-`getLine`の戻り値に消去された文字が含まれてないことを確認してください。
+`\ESC[1D`という制御文字列はどのターミナルでも動きません。しかし動かなくても、
+`getLine`の戻り値に消去された文字が含まれていないことを確認してください。
