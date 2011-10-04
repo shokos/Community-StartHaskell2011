@@ -9,7 +9,7 @@ GHCの標準ライブラリーには`getCh`が含まれていません。次の�
 
 http://www.cs.nott.ac.uk/~gmh/calculator.lhs
 
-もし自分で記述する場合(学習のためにもお勧めします)、次の定義です。
+もし自分で記述する場合（学習のためにもお勧めします）、次の定義です。
 
     -- base
     import System.IO (hSetEcho, stdin)
@@ -28,8 +28,8 @@ http://www.cs.nott.ac.uk/~gmh/calculator.lhs
 wait
 ----
 
-プログラムで時間を待たせるのに、ビジーウェイトは悪い方法です。この章で書いて
-ある`wait 500`は最近のパソコンではほとんど効果がありません。代わりに
+プログラムで時間を待たせるのに、ビジーウェイトは悪い方法です。この章で
+書いてある`wait 500`は最近のパソコンではほとんど効果がありません。代わりに
 `Control.Concurrent`で定義されている`threadDelay`関数を使ってください。
 `threadDelay 200000`とすれば十分時間を待たせられます。
 
