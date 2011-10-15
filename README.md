@@ -51,3 +51,12 @@
 * 練習問題：
     * [再帰の練習問題](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/recursion/recursion-ja.lhs)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/exercises/recursion/recursion-en.lhs)）
 * 宿題：[宿題2](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/homework/homework02/Homework02-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/homework/homework02/Homework02-en.md)）
+
+2011-11-13 第4回
+----------------
+
+* [ATND](http://atnd.org/events/20992)
+* 読書：[プログラミングHaskell](http://www.amazon.co.jp/gp/product/4274067815/)の第8・9章
+* 補足：
+    * [第8章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter08-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter08-en.md)）
+    * [第9章](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter09-ja.md)（[英語版](https://github.com/yuzutechnology/Community-StartHaskell2011/blob/master/book/supplements/Chapter09-en.md)）
