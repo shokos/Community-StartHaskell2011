@@ -5,13 +5,13 @@ nroot :: Double  -- precision
       -> Double  -- number
       -> Int     -- degree
       -> Double  -- root
-nroot delta x r | x >= 0 || r `mod` 2 == 1 = nroot' x
+nroot delta y n | y >= 0 || n `mod` 2 == 1 = nroot' y
                 | otherwise                = error "even root of negative"
   where
-    r' :: Double
-    r' = fromIntegral r
-    r1 :: Int
-    r1 = r - 1
+    n' :: Double
+    n' = fromIntegral n
+    n1 :: Int
+    n1 = n - 1
     nroot' :: Double -> Double
-    nroot' y = let y' = y + (x - y ^ r) / (r' * y ^ r1)
-               in  if approxEq delta y y' then y' else nroot' y'
+    nroot' x = let x' = x + (y - x ^ n) / (n' * x ^ n1)
+               in  if approxEq delta x x' then x' else nroot' x'
